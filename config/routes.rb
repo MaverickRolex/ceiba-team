@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   resources :pages, only:[:index]
 
-  root 'pages#index'
+  root to: 'pages#index', page: "home"
+
+  get "pages/:page", to: "pages#index", defaults: { page: "home" }
 end
