@@ -11,10 +11,13 @@
   <body>
     <div class="container-fluid">
       <div class="row" id="header">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 bordered">
-          CEIBA-TEAM
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <ul class="logo">
+            <li><%= image_tag "ceibalogo.png", class: "logoimg" %></li>
+            <li>CEIBA-TEAM</li>
+          </ul>
         </div>
-        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 bordered">
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
           <ul class="menu">
             <li>
               <%= link_to "#" do %>
@@ -45,9 +48,7 @@
         </div>
       </div>
 
-      <div class="row" id="content">
-        <%= yield %>
-      </div>
+      <%= yield %>
 
       <div class="row" id="footer">
 
