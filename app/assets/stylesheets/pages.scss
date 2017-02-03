@@ -1,5 +1,9 @@
 #header {
 
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #d1d1d1;
+
   .menu {
     list-style: none;
     padding: 0;
@@ -37,7 +41,7 @@
     font-size: 16px;
     font-weight: lighter;
       .logoimg{
-        width: 54px;
+        width: 39px;
         height: 54px;
        }
 
@@ -60,6 +64,8 @@
 }
 
 #content{
+  overflow: hidden;
+
   .back-image{
     position: relative;
     width: 100%;
@@ -71,6 +77,14 @@
     width: 100%;
     height: 580px;
     background-color: #1b3784;
+    z-index: 8;
+    opacity: 0.55;
+  }
+
+  .back-logo{
+    position: absolute;
+    width: 413px;
+    height: 570px;
     z-index: 9;
     opacity: 0.55;
   }
