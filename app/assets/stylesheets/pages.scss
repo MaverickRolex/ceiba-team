@@ -83,7 +83,7 @@
 
   .back-logo{
     position: absolute;
-    width: 413px;
+    width: 400px;
     height: 570px;
     z-index: 9;
     opacity: 0.55;
@@ -111,14 +111,46 @@
   }
 }
 
+.row-in-6{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  position: relative;
+}
+
 .background-color{
   background-color: #e1e6f5;
-  height: 350px;
+  height: 400px;
+}
+
+.title-in-box{
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.button-red{
+   background-color: red;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 8px;
 }
 
 .background-white{
   background-color: white;
-  height: 350px;
+  height: 400px;
+}
+
+.background-white-minor{
+  background-color: white;
+  height: 200px;
 }
 
 .background-gray{
@@ -130,6 +162,17 @@
   width: 54px;
   height: 54px;
  }
+
+.image-center{
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 250px;
+  height: 255px;
+
+
+
+}
 
 #team-info {
   .team-title{
