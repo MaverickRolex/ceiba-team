@@ -1,0 +1,2 @@
+rvm use 2.2.5
+rvm gemset use ceiba-team --create
