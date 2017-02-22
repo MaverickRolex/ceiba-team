@@ -10,8 +10,8 @@
 
   <body>
     <div class="container-fluid">
-      <div class="row" id="header">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      <div class="row fixed-li no-padding" id="bar-nav">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 no-padding">
           <ul class="logo">
             <li><%= image_tag "ceibalogo.png", class: "logoimg" %></li>
             <li>CEIBA-TEAM</li>
@@ -25,18 +25,18 @@
               <% end %>
             </li>
             <li>
-              <%= link_to page_path("us") do %>
-                <p>Nosotros</p>
-              <% end %>
-            </li>
-            <li>
               <%= link_to page_path("services") do %>
                 <p>Servicios</p>
               <% end %>
             </li>
             <li>
+              <%= link_to page_path("us") do %>
+                <p>Nosotros</p>
+              <% end %>
+            </li>
+            <li>
               <%= link_to page_path("news") do %>
-                <p>Novedades</p>
+                <p>Tecnologías</p>
               <% end %>
             </li>
             <li>
@@ -51,7 +51,6 @@
       <%= yield %>
 
       <div class="row background-gray" id="footer">
-
       </div>
     </div>
   </body>
